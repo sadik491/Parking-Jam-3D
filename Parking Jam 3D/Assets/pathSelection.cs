@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class pathSelection : MonoBehaviour
 {
     public FlwPolice flwPolice;
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         flwPolice.enabled = true;
+        Debug.Log("Run");
     }
 
 }
