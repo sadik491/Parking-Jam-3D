@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class TouchControl : MonoBehaviour
 {
@@ -7,7 +9,7 @@ public class TouchControl : MonoBehaviour
     private Vector3 offset;
     private Transform toDrag;
 
- 
+    public Rigidbody rb;
     void Start()
     {
         
